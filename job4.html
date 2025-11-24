@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>城市诗歌朗诵夜 · Poetry Reading Night</title>
+    <style>
+        /* 页面整体样式 */
+        body {
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            background: linear-gradient(135deg, #fffbf0, #fff8e6);
+            color: #4a3c2e;
+            text-align: center;
+        }
+
+        /* 主内容卡片样式（按要求仅修改背景色） */
+        .page {
+            display: inline-block;
+            background-color: #FFF6D9;
+            box-shadow: 0 0 30px rgba(80, 58, 35, 0.25);
+            text-align: left;
+            max-width: 720px;
+        }
+
+        /* 并集选择器：统一标题样式 */
+        h1, h2, h3, h4, h5, h6 {
+            color: #6d4c3d;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+        }
+
+        /* ID选择器：重要提示强调样式 */
+        p#intro {
+            font-size: 140%;
+            font-weight: bold;
+            color: #a83e27;
+            line-height: 1.8;
+        }
+
+        /* 活动介绍普通段落样式 */
+        .intro-content {
+            line-height: 1.8;
+            letter-spacing: 0.8px;
+            margin: 8px 0;
+        }
+
+        /* 表格样式 */
+        table {
+            width: 100%;
+            background-color: #fff9e8;
+            font-size: 95%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #f5e6d3;
+            text-align: left;
+            line-height: 2.3;
+            padding-left: 12px;
+        }
+
+        td {
+            line-height: 2.1;
+            padding-left: 12px;
+        }
+
+        /* 表格斑马纹效果 */
+        table tr:nth-child(even) {
+            background-color: #fff5d1;
+        }
+
+        /* 表格行hover效果 */
+        table tr:hover {
+            background-color: #ffeec0;
+        }
+
+        /* 后代选择器：div表格中的链接样式 */
+        div table a {
+            font-weight: bold;
+            font-size: 115%;
+            color: #9b3c27;
+            text-decoration: underline;
+        }
+
+        /* 链接伪类样式 */
+        a:link {
+            color: #b84d36;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #7d5a4f;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #d65a3e;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        a:active {
+            color: #42388e;
+            text-decoration: underline;
+        }
+
+        /* 带类名的链接样式 */
+        a.red:link {
+            color: #e04a2f;
+            font-size: 105%;
+            font-weight: 500;
+        }
+
+        a.red:active {
+            color: #3a4fc9;
+        }
+
+        a.blue:link {
+            color: #3d7d58;
+            font-size: 105%;
+            font-weight: 500;
+        }
+
+        a.blue:active {
+            color: #9d3aa6;
+        }
+
+        /* 伪元素：段落首字样式 */
+        p::first-letter {
+            font-size: 190%;
+            color: #a03c28;
+            font-weight: bold;
+            float: left;
+            margin-right: 6px;
+            line-height: 1;
+        }
+
+        /* 伪元素：div第一行样式 */
+        div::first-line {
+            color: #963826;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* 底部公告区样式 */
+        .notice {
+            font-size: 90%;
+            line-height: 1.7;
+            padding: 0 10px;
+        }
+
+        /* 分隔线样式 */
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, rgba(109,76,61,0), rgba(109,76,61,0.5), rgba(109,76,61,0));
+            margin: 15px 0;
+        }
+
+        /* 居中样式 */
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <!-- 顶部标题区 -->
+    <div>
+        <h1 class="center">城市诗歌朗诵夜 · Poetry Reading Night</h1>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 活动介绍区 -->
+    <div>
+        <h2 id="intro" class="center">以诗为媒，共赴夜色之约</h2>
+        
+        <p class="intro-content">
+            当城市的霓虹渐次亮起，当白日的喧嚣归于平静，总有一种温柔的力量，能让心灵找到栖息之地。城市诗歌朗诵夜，正是为每一位热爱文字、钟情诗意的你而来。在这里，我们无需喧嚣的舞台，不必华丽的修饰，只需一盏暖灯、一段文字、一颗赤诚之心，便能在诗歌的世界里相遇、共鸣。
+        </p>
+        
+        <p class="intro-content">
+            本次活动将邀请诗歌爱好者们齐聚一堂，分享那些触动心灵的诗句。你可以带来珍藏的诗集，诵读自己钟爱的篇章；也可以分享原创诗作，诉说独属于你的故事与感悟。现场将营造沉浸式的朗诵氛围，搭配轻柔的古典音乐与淡雅的香氛，让每一句诗都能抵达人心深处。正如古人所言：“腹有诗书气自华”，诗歌的美好，不仅在于文字的韵律，更在于它能滋养心灵、传递力量。
+        </p>
+        
+        <p class="intro-content">
+            无论你是资深的朗诵爱好者，还是初次尝试的诗歌新人；无论你偏爱古典诗词的典雅韵味，还是现代诗歌的自由洒脱，都能在这里找到属于自己的天地。我们鼓励真诚的表达，珍视每一次心灵的碰撞，让诗歌成为连接你我的桥梁，在城市的夜色中编织一场诗意的梦境。
+        </p>
+        
+        <p id="intro">
+            重要提示：本次活动席位限量30席，报名需填写真实姓名与联系方式，报名成功将以短信通知为准。请参与者提前准备好朗诵作品，时长控制在3-5分钟，便于现场交流分享。
+        </p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 活动报名信息表格区 -->
+    <div>
+        <h3 class="center">活动报名信息表</h3>
+        <table>
+            <tr>
+                <th>报名序号</th>
+                <th>姓名</th>
+                <th>联系方式</th>
+                <th>朗诵主题</th>
+                <th>报名状态</th>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td><a href="https://hongchenwusdnu.github.io/bookstore/job4.html">林晓</a></td>
+                <td>135****8921</td>
+                <td>古典诗词专场</td>
+                <td>已确认</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td><a href="https://hongchenwusdnu.github.io/bookstore/job4.html">陈宇</a></td>
+                <td>136****7345</td>
+                <td>现代诗歌创作分享</td>
+                <td>已确认</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>赵玥</td>
+                <td>138****5678</td>
+                <td>国外经典诗歌译读</td>
+                <td>待确认</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>孙浩</td>
+                <td>139****3210</td>
+                <td>故乡主题诗歌朗诵</td>
+                <td>候补名单</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 页面链接区 -->
+    <div class="center">
+        <div>
+            <a class="red" href="https://hongchenwusdnu.github.io/bookstore/job4.html">查看往期活动照片</a><br><br>
+            <a class="blue" href="https://lithoscorpion.github.io/-/web/job3.html">在线咨询活动详情</a>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 底部公告区 -->
+    <div class="notice">
+        活动时间：2025年4月19日（周六）晚19:00-21:30<br>
+        活动地点：城市文化中心二楼多功能厅（和平路126号，地铁3号线文化广场站C口出）<br>
+        温馨提示：1. 请参与者提前15分钟到场签到，凭报名短信入场；2. 现场提供免费茶水与诗歌手册，禁止携带食品与宠物；3. 如需录制朗诵视频，请提前告知工作人员，尊重他人隐私与知识产权；4. 活动期间保持安静，手机调至静音状态，共同维护诗意氛围。
+    </div>
+
+    <br>
+</div>
+
+</body>
+</html>
